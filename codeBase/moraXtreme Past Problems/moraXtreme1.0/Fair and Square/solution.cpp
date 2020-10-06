@@ -17,7 +17,7 @@ int main() {
     int t;
     cin >> t;
     int count[20001];
-    count[0] = 1, count[1] = 2, count[2] = 3, count[3] = 3; // Base Cases
+    count[0] = 0, count[1] = 1, count[2] = 2, count[3] = 3; // Base Cases
     for (int n = 4; n <= 20000; n++) {
         count[n] = n;  // n can be always represented as sum of n square of 1s and it's the maximum perfect square count
         for (int i = 1; i * i <= n; i++)
